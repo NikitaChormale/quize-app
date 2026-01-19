@@ -20,6 +20,13 @@ function App() {
   if (questionIndex > 0) {
     setquestionIndex(questionIndex - 1);
   }
+  setoptionstyles({
+    0:{},
+    1:{},
+    2:{},
+    3:{},
+  });
+
 };
 
 
@@ -77,7 +84,10 @@ onClick={()=>{
 }}
  />
  <ArrowBigLeft className='img-back-questions'
- onClick={prevQuestion}/>
+ onClick={prevQuestion}
+ 
+
+  />
 
  
 <Toaster/>
